@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <title>Contact</title>
+    <link href="../Images/Untitled-1.png" rel="icon" type="image/x-icon"/>
+</head>
+<body>
+    <div class="nav" id="div">
+        <div class="logo">
+            <a href="../index.html">
+                <img class="logopic" src="../Images/Untitled-1.png">
+            </a>
+        </div>
+        <!-- <div class="switch">
+            <input type="checkbox" class="checkbox" id="checkbox" onclick="myFunction()">
+            <label for="checkbox" class="label">
+                <div class="ball"></div>
+            </label>
+        </div>
+        <script>
+            function myFunction() {
+               var element = document.body;
+               let div = document.getElementById("div");
+               console.log(element)
+               element.classList.toggle("bodylight-mode");
+               div.classList.toggle("bodylight-mode");
+            }
+        </script> -->
+    </div>
+    <div class="panel1" id="div">
+        <img class="fotoperfil" src="../Images/fotoperfil.jpg">
+    </div>
+    <div class="main">
+        <div class="container">
+            <form class="cformulario">
+                <h1 class="titulo">Contact</h1>
+                <div class="campodoble">
+                    <div>
+                        <input class="inputdoble" type="text" name="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div>
+                        <input class="inputdoble"  type="text" name="apellido" placeholder="Apellido" required>
+                    </div>
+                </div>
+                <div class="campodoble">
+                    <div>
+                        <select class="inputdoble" required>
+                            <option value>Género</option>
+                            <option value="Hombre">Hombre</option>
+                            <option value="Mujer">Mujer</option>
+                            <option value="Otros">Otros</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input class="inputdoble" placeholder="Fecha de Nacimiento" type="text" onfocus="(this.type='date')" required>
+                    </div>
+                </div>
+                <div class="campo">
+                    <div>
+                        <input class="input" type="text" name="Email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="campo">
+                    <select class="input" required>
+                        <option value>País</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="Cuba">Cuba</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="El Salvador">El Salvador</option>
+                        <option value="Guatemala">Guatemala</option>
+                        <option value="Haiti">Haiti</option>
+                        <option value="Honduras">Honduras</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Nicaragua">Nicaragua</option>
+                        <option value="Panama">Panama</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Republica Dominicana">Republica Dominicana</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Venezuela">Venezuela</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <div>
+                        <input class="input" type="text" name="Dirección" placeholder="Dirección" required>
+                    </div>
+                </div>
+                <div class="campo">
+                    <div>
+                        <input class="input" type="text" name="telefono" placeholder="Telefono" required>
+                    </div>
+                </div>
+                <div class="textbox">
+                    <textarea class="textarea" placeholder="Mensaje"></textarea>
+                </div>
+                <div class="checkpolicy">
+                    <label>
+                        <input required type="checkbox">
+                        Estoy de acuerdo con el almacenamiento y manejo de mis datos de acuerdo con este formulario.
+                        <a class="politicas" href="#">Políticas de Privacidad</a>
+                    </label>
+                </div>
+                <div class="CTA">
+                    <button class="btnsumit" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="panel2" id="div">
+        <div class="buttomcontainer">
+            <div class="btn-container">
+                <a href="../index.html">
+                    <button class="btn" type="submit">Home</button>
+                </a>
+            </div>
+            <div class="btn-container">
+                <a href="../About/index.html">
+                    <button class="btn" type="submit">About</button>
+                </a>
+            </div>
+            <div class="pagebtn-container">
+                <a href="#">
+                    <button class="pagebtn" type="submit">Contact</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

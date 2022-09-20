@@ -1,0 +1,214 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+*::selection{
+    color: #15273f;
+    background: #23f3f1;
+}
+body{
+    background-color: #0d1a2d;
+    min-width: 1000px;
+    margin: auto;
+}
+
+.nav{
+    float: left;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    position: fixed;
+    height: 75px;
+    width: 100%;
+    background: #15273f;
+    z-index: 9;
+    box-shadow: 0 8px 16px 0 rgba( 0, 0, 0, 0.37 )
+}
+
+.bodylight-mode{
+    background: #f5f6fa;
+}
+
+
+.logo{
+    display: block;
+    position: relative;
+    float: left;
+    height: 75px;
+    padding-top: 15px;
+    margin: auto;
+    display: block;
+    width: 300px;
+}
+
+.switch{
+    float: right;
+    width: 25%;
+    height: 75px;
+}
+
+.logopic{
+    top: 50%;
+    left: 20%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 50px;
+}
+
+.panel1{
+    display: block;
+    position: relative;
+    margin-left: 1%;
+    margin-top: 5%;
+    float: left;
+    width: 28%;
+    height: 38vh;
+    background: #15273f;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba( 0, 0, 0, 0.37 )
+}
+
+.fotoperfil{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    width: 40%;
+}
+
+.main{
+    margin-right: 1%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    position: relative;
+    float: right;
+    width: 69%;
+    height: 97.8vh;
+    background: #15273f;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba( 0, 0, 0, 0.37 )
+}
+
+.paisaje{
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 750px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.panel2{
+    position: relative;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    float: left;
+    width: 28%;
+    height: 58vh;
+    background: #15273f;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px 0 rgba( 0, 0, 0, 0.37 )
+}
+
+.buttomcontainer{
+    margin-top: 5%;
+    width: 75%;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+.btn-container{
+    position: relative;
+    padding-top: 10px;
+    margin-bottom: 80px;
+    height: 60px;
+    width: 100%;
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 16px 32px 0 rgba( 0, 0, 0, 0.5 )
+}
+
+.btn{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 55px;
+    width: 95%;
+    background-color: #23f3f1;
+    text-decoration: none;
+    border-radius: 100px;
+    border: none;
+    color: #0c5958;
+    font-size: 25px;
+    box-shadow: 0 8px 16px 0 rgba( 0, 0, 0, 0.37 )
+}
+
+.pagebtn-container{
+    position: relative;
+    padding-top: 10px;
+    margin-bottom: 80px;
+    height: 60px;
+    width: 100%;
+}
+
+.pagebtn:hover{
+    cursor: pointer;
+    box-shadow: 0 16px 32px 0 rgba( 0, 0, 0, 0.5 )  
+}
+
+.pagebtn{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 55px;
+    width: 95%;
+    background-color: #0c5958;
+    text-decoration: none;
+    border-radius: 100px;
+    border: none;
+    color: #23f3f1;
+    font-size: 25px;
+    box-shadow: 0 8px 16px 0 rgba( 0, 0, 0, 0.37 )
+}
+
+
+.label{
+    margin-right: 35px;
+    margin-top: 20px;
+    background-color: #23f3f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    padding: 5px;
+    height: 25px;
+    width: 50px;
+}
+.ball{
+    position: absolute;
+    background-color: #15273f;
+    border-radius: 25px;
+    margin-left: 21px;
+    height: 22px;
+    width: 22px;
+    transition: transform 0.3s ease;
+}
+
+.checkbox:checked + .label .ball{
+    transform: translateX(-24px);
+}
+
+.checkbox{
+    display: none;
+}
